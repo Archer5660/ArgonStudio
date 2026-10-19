@@ -6,6 +6,7 @@ APP_NAME="ArgonStudio"
 BUNDLE_ID="com.archershilling.ArgonStudio"
 MIN_SYSTEM_VERSION="13.0"
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+APP_VERSION="$(node -p "require('$ROOT_DIR/package.json').version")"
 DIST_DIR="$ROOT_DIR/dist"
 APP_BUNDLE="$DIST_DIR/$APP_NAME.app"
 APP_CONTENTS="$APP_BUNDLE/Contents"
@@ -37,6 +38,8 @@ cat > "$APP_CONTENTS/Info.plist" <<PLIST
 <key>CFBundleExecutable</key><string>$APP_NAME</string>
 <key>CFBundleIdentifier</key><string>$BUNDLE_ID</string>
 <key>CFBundleName</key><string>$APP_NAME</string>
+<key>CFBundleShortVersionString</key><string>$APP_VERSION</string>
+<key>CFBundleVersion</key><string>$APP_VERSION</string>
 <key>CFBundlePackageType</key><string>APPL</string>
 <key>LSMinimumSystemVersion</key><string>$MIN_SYSTEM_VERSION</string>
 <key>NSPrincipalClass</key><string>NSApplication</string>

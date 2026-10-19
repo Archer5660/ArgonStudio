@@ -1,6 +1,6 @@
 {
   "name": "argonstudio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An interactive desktop version of the Gemini Argon showcase experience.",
   "main": "electron/main.cjs",
   "author": "Archer Shilling",
@@ -19,11 +19,11 @@
     "appId": "com.archershilling.argonstudio",
     "productName": "ArgonStudio",
     "directories": { "output": "release" },
-    "files": ["electron/**/*", "Sources/ArgonStudio/Web/**/*", "package.json"],
+    "files": ["electron/**/*", "Sources/ArgonStudio/Web/**/*", "assets/**/*", "package.json"],
     "mac": { "target": ["dmg"], "category": "public.app-category.graphics-design" },
-    "win": { "target": ["nsis"] },
+    "win": { "target": ["nsis"], "icon": "assets/icon.ico" },
     "nsis": { "oneClick": true, "perMachine": false, "createDesktopShortcut": true },
-    "linux": { "target": ["deb"], "category": "Graphics" },
+    "linux": { "target": ["deb"], "category": "Graphics", "icon": "assets/icon.png" },
     "deb": { "synopsis": "Interactive Argon showcase", "description": "ArgonStudio desktop experience" }
   }
 }
