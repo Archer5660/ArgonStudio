@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="40" x2="930" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#162FE8"/>
+      <stop offset="0.53" stop-color="#087DF6"/>
+      <stop offset="1" stop-color="#00BDD4"/>
+    </linearGradient>
+    <linearGradient id="glyph" x1="250" y1="200" x2="760" y2="830" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D8F6FF"/>
+    </linearGradient>
+    <filter id="shadow" x="132" y="130" width="760" height="790" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <path d="M0 760 1024 490v534H0z" fill="#072E9E" opacity=".18"/>
+  <g fill="#C6F8FF" opacity=".18">
+    <rect x="95" y="104" width="90" height="90" rx="14"/>
+    <rect x="202" y="104" width="90" height="90" rx="14"/>
+    <rect x="95" y="211" width="90" height="90" rx="14"/>
+    <rect x="829" y="718" width="90" height="90" rx="14"/>
+    <rect x="829" y="825" width="90" height="90" rx="14"/>
+    <rect x="722" y="825" width="90" height="90" rx="14"/>
+  </g>
+  <path d="M585 188H716V586H818V706H716V844H584V706H230V602L537 188H585ZM584 408 437 586H584V408Z" fill="#04288A" opacity=".34" filter="url(#shadow)"/>
+  <path d="M585 164H716V562H818V682H716V820H584V682H230V578L537 164H585ZM584 384 437 562H584V384Z" fill="url(#glyph)" fill-rule="evenodd"/>
+  <path d="M585 164H716V562" fill="none" stroke="#FFFFFF" stroke-opacity=".75" stroke-width="7"/>
+</svg>

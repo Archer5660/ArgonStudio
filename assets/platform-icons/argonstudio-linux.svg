@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientTransform="matrix(850 770 -750 828 220 180)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#282051"/>
+      <stop offset=".58" stop-color="#10152D"/>
+      <stop offset="1" stop-color="#080C1A"/>
+    </radialGradient>
+    <linearGradient id="argon" x1="287" y1="222" x2="740" y2="804" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#83FFE5"/>
+      <stop offset=".53" stop-color="#35D6FF"/>
+      <stop offset="1" stop-color="#48A5FF"/>
+    </linearGradient>
+    <filter id="glow" x="112" y="90" width="810" height="840" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="19"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <path d="m512 83 370 214v430L512 941 142 727V297L512 83Z" fill="none" stroke="#89FFE9" stroke-opacity=".24" stroke-width="10"/>
+  <path d="M512 143c198 0 359 164 359 366S710 875 512 875 153 711 153 509s161-366 359-366Z" fill="none" stroke="#4CC9FF" stroke-opacity=".18" stroke-width="7" stroke-dasharray="8 26"/>
+  <ellipse cx="512" cy="512" rx="390" ry="171" transform="rotate(-42 512 512)" fill="none" stroke="#69F8DE" stroke-opacity=".39" stroke-width="8"/>
+  <circle cx="238" cy="778" r="17" fill="#A0FFE9"/>
+  <circle cx="796" cy="250" r="14" fill="#54DAFF"/>
+  <circle cx="743" cy="833" r="10" fill="#A0FFE9"/>
+  <path d="M585 188H716V586H818V706H716V844H584V706H230V602L537 188H585ZM584 408 437 586H584V408Z" fill="#26D7F5" opacity=".72" filter="url(#glow)"/>
+  <path d="M585 164H716V562H818V682H716V820H584V682H230V578L537 164H585ZM584 384 437 562H584V384Z" fill="url(#argon)" fill-rule="evenodd"/>
+  <path d="M585 164H716V562" fill="none" stroke="#E7FFF9" stroke-opacity=".8" stroke-width="7"/>
+</svg>

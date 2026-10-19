@@ -1,6 +1,6 @@
 {
   "name": "argonstudio",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An interactive desktop version of the Gemini Argon showcase experience.",
   "main": "electron/main.cjs",
   "author": "Archer Shilling",
@@ -18,12 +18,39 @@
   "build": {
     "appId": "com.archershilling.argonstudio",
     "productName": "ArgonStudio",
-    "directories": { "output": "release" },
-    "files": ["electron/**/*", "Sources/ArgonStudio/Web/**/*", "assets/**/*", "package.json"],
-    "mac": { "target": ["dmg"], "category": "public.app-category.graphics-design" },
-    "win": { "target": ["nsis"], "icon": "assets/icon.ico" },
-    "nsis": { "oneClick": true, "perMachine": false, "createDesktopShortcut": true },
-    "linux": { "target": ["deb"], "category": "Graphics", "icon": "assets/icon.png" },
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "electron/**/*",
+      "Sources/ArgonStudio/Web/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.graphics-design"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/platform-icons/argonstudio-windows.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true
+    },
+    "linux": {
+      "target": [
+        "deb"
+      ],
+      "category": "Graphics",
+      "icon": "assets/platform-icons/argonstudio-linux.png"
+    },
     "deb": {
       "maintainer": "Archer Shilling <Archer@shilling.id.au>",
       "synopsis": "Interactive Argon showcase",
