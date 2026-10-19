@@ -1,6 +1,6 @@
 {
   "name": "argonstudio",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An interactive desktop version of the Gemini Argon showcase experience.",
   "main": "electron/main.cjs",
   "author": "Archer Shilling",
@@ -8,8 +8,8 @@
   "private": true,
   "scripts": {
     "start": "electron .",
-    "dist:windows": "electron-builder --win nsis",
-    "dist:linux": "electron-builder --linux deb"
+    "dist:windows": "electron-builder --win nsis --publish never",
+    "dist:linux": "electron-builder --linux deb --publish never"
   },
   "devDependencies": {
     "electron": "^44.3.0",
@@ -24,6 +24,10 @@
     "win": { "target": ["nsis"], "icon": "assets/icon.ico" },
     "nsis": { "oneClick": true, "perMachine": false, "createDesktopShortcut": true },
     "linux": { "target": ["deb"], "category": "Graphics", "icon": "assets/icon.png" },
-    "deb": { "synopsis": "Interactive Argon showcase", "description": "ArgonStudio desktop experience" }
+    "deb": {
+      "maintainer": "Archer Shilling <Archer@shilling.id.au>",
+      "synopsis": "Interactive Argon showcase",
+      "description": "ArgonStudio desktop experience"
+    }
   }
 }
